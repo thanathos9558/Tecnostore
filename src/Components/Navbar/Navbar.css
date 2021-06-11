@@ -1,5 +1,12 @@
 .full-container {
-    height: 100vh;
+  
     display: flex;
     flex-direction: column;
+  }
+  .sideBarFull {
+    height: 94vh;  
+  }
+
+.sideBarLinks li{
+padding-top: 5%;
   }

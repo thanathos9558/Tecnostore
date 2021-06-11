@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import CartWidget from '../CartWidget/CartWidget';
 
 export default function Navbar() {
   return (
@@ -23,12 +24,14 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
+        <CartWidget/> 
+
       </nav>
-      <div className="container-fluid h-100">
+      <div className="container-fluid sideBarFull">
         <div className="row h-100">
-          <nav className="col-md-2 d-none d-md-block bg-light sidebar">
+        <nav className="col-md-2 d-none d-md-block bg-light sidebar ">
             <div className="sidebar-sticky">
-              <ul className="nav flex-column">
+              <ul className="nav flex-column sideBarLinks">
                 <li className="nav-item">
                   <a className="nav-link active" href="/accesories">
                     <span data-feather="home"></span>
@@ -57,7 +60,7 @@ export default function Navbar() {
             </div>
           </nav>
         </div>
-      </div>
+      </div>   
     </div>
   );
 }
