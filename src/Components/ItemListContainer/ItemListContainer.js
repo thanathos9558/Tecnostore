@@ -3,7 +3,7 @@ import './ItemListContainer.css'
 
 export const ItemListContainer = ({ greetings }) => {
   return (
-    <div className="greetings"> Welcome!, {greetings} </div>
+    <div className="greetings"> Welcome, {greetings}!</div>
     )
 }
-export default ItemListContainer;
+
