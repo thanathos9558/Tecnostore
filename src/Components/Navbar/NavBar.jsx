@@ -27,6 +27,7 @@ export default function Navbar() {
         <CartWidget/> 
 
       </nav>
+      
       <div className="container-fluid sideBarFull">
         <div className="row h-100">
         <nav className="col-md-2 d-none d-md-block bg-light sidebar ">
