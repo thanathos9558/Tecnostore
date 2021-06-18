@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import CartWidget from '../CartWidget/CartWidget';
-
+import { ItemListContainer } from "../ItemListContainer/ItemListContainer";
 export default function Navbar() {
   return (
     <div className="full-container">
@@ -28,40 +28,7 @@ export default function Navbar() {
 
       </nav>
       
-      <div className="container-fluid sideBarFull">
-        <div className="row h-100">
-        <nav className="col-md-2 d-none d-md-block bg-light sidebar ">
-            <div className="sidebar-sticky">
-              <ul className="nav flex-column sideBarLinks">
-                <li className="nav-item">
-                  <a className="nav-link active" href="/accesories">
-                    <span data-feather="home"></span>
-                    Accesorios
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="/phones">
-                    <span data-feather="home"></span>
-                    Teléfonos
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="/repair">
-                    <span data-feather="home"></span>
-                    Reparaciones
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="/tutorial">
-                    <span data-feather="home"></span>
-                    Tutoriales
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>   
+        
     </div>
   );
 }

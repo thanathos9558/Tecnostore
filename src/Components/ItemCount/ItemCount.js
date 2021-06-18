@@ -12,7 +12,7 @@ export default class ItemCount extends React.Component {
   }
   render() {
     return (
-      <div className="plot">
+      <div className="col mb-3">
         <p className="cantidad">  {this.state.initial} </p>
         <button onClick={() => this.setState({ initial: this.state.initial + 1 })}>
           +

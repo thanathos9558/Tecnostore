@@ -16,16 +16,16 @@ const items = [
         price: '200.000 $',
         pictureUrl: 'https://images-na.ssl-images-amazon.com/images/I/51y9mfta36S._AC_SL1500_.jpg'
     }, {
-        id: 1,
+        id: 2,
         title: 'Earpods ',
         description: 'Auriculares Inalambricos Bluetooth',
-        price: '200.000 $',
+        price: '300.000 $',
         pictureUrl: 'https://images-na.ssl-images-amazon.com/images/I/51y9mfta36S._AC_SL1500_.jpg'
     }, {
-        id: 1,
+        id: 3,
         title: 'Earpods ',
         description: 'Auriculares Inalambricos Bluetooth',
-        price: '200.000 $',
+        price: '400.000 $',
         pictureUrl: 'https://images-na.ssl-images-amazon.com/images/I/51y9mfta36S._AC_SL1500_.jpg'
     }
 

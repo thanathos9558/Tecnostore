@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap';
 import { Col,Row } from 'react-bootstrap';
+import ItemCount from '../ItemCount/ItemCount';
 
 export default Item
 function Item(props) {
@@ -8,7 +9,7 @@ function Item(props) {
         <Row >
             {props.items.map((item) =>
                 <Col key={item.id} >
-                    <Card style={{ width: '18rem' }}>
+                    <Card className="mt-2 mb-2" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={item.pictureUrl}/>
                         <Card.Body>
                             <Card.Title>{item.title}</Card.Title>
@@ -19,6 +20,7 @@ function Item(props) {
                             </Card.Text>
                             <Button variant="primary">Detalles</Button>
                         </Card.Body>
+                        <ItemCount />
                     </Card>
 
                 </Col>
