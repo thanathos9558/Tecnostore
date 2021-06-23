@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import CartWidget from '../CartWidget/CartWidget';
-import { ItemListContainer } from "../ItemListContainer/ItemListContainer";
 export default function Navbar() {
   return (
     <div className="full-container">
