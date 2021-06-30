@@ -25,12 +25,9 @@ function App() {
                 <Electronics />
               </Col>
             </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/details/:id">
-              <ItemDetailContainer />
-            </Route>
+            <Route exact path="/"><Home /></Route>
+            <Route path="/details/:id"><ItemDetailContainer /></Route>
+            <Route path="/cart"> </Route>
           </Row>
         </div>
       </Switch>
