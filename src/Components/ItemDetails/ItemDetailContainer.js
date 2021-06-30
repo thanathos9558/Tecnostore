@@ -1,26 +1,27 @@
 import React, { useState } from 'react'
 import ItemDetail from '../ItemDetails/ItemDetail';
+import { Col } from 'react-bootstrap'
+import { useParams } from 'react-router-dom';
 
 
 function ItemDetailContainer() {
 
     const [data, setData] = useState({});
+    const { id } = useParams();
+
     React.useEffect(() => {
         setTimeout(() => {
-            // console.log('USE EFFECT');
-        }, 2000);
-        fetch(
-            'https://api.nasa.gov/planetary/apod?api_key=coA9qITMoP7cGlECEA0qW2T7nZhqoOerlCo8hoUM'
-        )
-            .then((res) => res.json())
-            .then((dataApi) => setData(dataApi));
-    }, []);
+                fetch(`https://fakestoreapi.com/products/${id}`)
+                .then((res) => res.json())
+                .then((dataApi) => setData(dataApi));
+        }, 0);
+
+    }, [id]);
     return (
-        <div>
-            <div className='container'>
-                <ItemDetail data={data} />
-            </div>
-        </div>
+        <Col className="mt-4" xs="10">
+            <ItemDetail prop={data} />
+        </Col>
+
     )
 }
 

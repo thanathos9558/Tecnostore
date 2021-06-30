@@ -1,36 +1,35 @@
 import React from 'react'
-import { Card, Button } from 'react-bootstrap';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, Card, Button } from 'react-bootstrap';
 import ItemCount from '../ItemCount/ItemCount';
 
 export default Item
 function Item(props) {
     const card = (
-        <Row >
+        <Row>
             {props.items.map((item) =>
-                <Col key={item.id} >
-                    <Card className="mt-2 mb-2" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={item.pictureUrl} />
-                        <Card.Body>
-                            <Card.Title>{item.title}</Card.Title>
+                <Col key={item.id} xs="3" >
+                    <Card className="mt-2 mb-2"  >
+                        <Card.Img variant="top" src={item.pictureUrl} style={{ height:"300px", padding:"0 5%"}} />
+                        <Card.Body className="text-center">
+                            <Card.Title className="text-uppercase">{item.title}</Card.Title>
                             <Card.Text>
                                 {item.description}
                                 <br></br>
                                 {item.price}
                             </Card.Text>
-                            <Button variant="primary">Detalles</Button>
+                            <Button className="mb-2" variant="primary">Detalles</Button>
+                            <ItemCount />
                         </Card.Body>
-                        <ItemCount />
                     </Card>
                 </Col>
             )}
         </Row>
-
 
     );
     return (
         <div>
             {card}
         </div>
+
     );
 }

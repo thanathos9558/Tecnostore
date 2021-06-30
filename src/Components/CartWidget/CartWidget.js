@@ -5,7 +5,7 @@ import  "./CartWidget.css";
 export const CartWidget = () => {
     return (
         <div>
-            <Icon.Cart className="carrito" color="#db6400" size={36} />
+            <Icon.Cart className="carrito" color="#fff" size={36} />
         </div>
     )
 }
